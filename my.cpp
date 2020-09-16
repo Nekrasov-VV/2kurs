@@ -11,7 +11,7 @@ void Student::pr(){
 	printf("%s %d\n",name,group);
 }
 Student &  Student::operator ++(void){ //++a
-	if(group<60000) //если номер курса больше 1, переводим студента на курс ниже
+	if(group<600) //если номер курса больше 1, переводим студента на курс ниже
 		group+=100;
 	return *this; //возвращаем измененный объект
 }
@@ -22,7 +22,7 @@ Student Student::operator ++(int){ //a++
 	return tmp;//возвращаем неизмененный объект
 }
 ostream &operator<<(ostream &cout, const Student &student){
-	cout<<student.name<<" grop N "<<student.group<<endl;//вставляем в выходной поток фамилию и номер группы
+	cout<<student.name<<" group N "<<student.group<<endl;//вставляем в выходной поток фамилию и номер группы
 	return cout;
 }
 Student Student::operator+(const Student &student){
