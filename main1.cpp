@@ -1,4 +1,4 @@
-#include"my.h"
+#include"my1.h"
 #define N 111111
 int main(){ 
 	srand(time(NULL));//для генерации различных (от вызова к вызову) случайных чисел

@@ -1,4 +1,4 @@
-#include"my.h"
+#include"my1.h"
 
 Student::Student (int x){ 
 	N=x;
