@@ -10,7 +10,7 @@ class Student{
 	int N;  // количество букв в фамилии
 	int group;
 	public:
-	void pr();
+	void pr()const;
 	Student (int); 
 	Student operator+(const Student &);
 	Student & operator ++(void);//инкремент  ++student возвращает измененный объект

@@ -9,7 +9,7 @@ Student::Student (int x){
 	name[0]-='a'-'A';//первую букву фамилии делаем заглавной
 	group=101+rand()%26;//при рождении студента регистрируем в группу первого курса случайным образом
 }
-void Student::pr(){
+void Student::pr()const{
 	printf("%s %d\n",name,group);
 }
 Student &  Student::operator ++(void){ //++a
