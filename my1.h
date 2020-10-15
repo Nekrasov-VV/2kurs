@@ -1,8 +1,8 @@
 #include<stdio.h> //реализация сложного класса
 #include<stdlib.h>
-#include<string.h>
 #include<time.h>
 #include<iostream>
+#include<string.h>
 using namespace std;
 
 class Student{
@@ -12,6 +12,8 @@ class Student{
 	public:
 	void pr()const;
 	Student (int); 
+	Student (); 
+
 	Student operator+(const Student &);
 	Student & operator ++(void);//инкремент  ++student возвращает измененный объект
 	Student   operator ++(int);//инкремент student++ возвращает копию исходного объекта, и потом исходный изменяет
