@@ -12,7 +12,7 @@ Student::Student (int x){
 }
 Student::Student (){ 
 	N=0;
-	name=nullptr;//завершаем заполнение фамилии
+	name=nullptr;
 	
 }
 void Student::pr()const{
