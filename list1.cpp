@@ -47,10 +47,9 @@ int List::GoToNext(){ //передвигаем текущий в следующ�
 		return 1;
 }
 T& List::Get(){
-	return cur->v;
+	return cur->next->v;
 }
-
-
+// __________________________________  вспомогательые методы
 
 List::iterator List::Begin()const{
 	return iterator(this);
